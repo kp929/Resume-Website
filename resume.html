@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krisha Patel Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+
+        h1.logo {
+            font-size: 2.5em;
+            font-weight: normal;
+        }
+
+        /* --- Nav Styles --- */
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Flyout Menu Styling */
+        .flyout-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            padding: 10px 0;
+        }
+
+        .flyout-menu a {
+            color: #333;
+            padding: 8px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.8em;
+        }
+
+        .flyout-menu a:hover {
+            background-color: #ddd;
+            text-decoration: none;
+        }
+
+        .projects-item:hover .flyout-menu {
+            display: block;
+        }
+        /* --- End Nav Styles --- */
+
+        /* Main Content Layout (Two Columns) */
+        .main-content {
+            display: flex;
+        }
+
+        .left-column {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .right-column {
+            flex: 2;
+            padding-left: 40px;
+            border-left: 1px solid #eee;
+        }
+
+        /* Section Headings */
+        h2 {
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+
+        /* Subheadings (Job Titles, Project Titles, School Name) */
+        h3 {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h4 {
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        p, ul {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .location-date {
+            text-align: right;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        /* --- Academic Projects Section (Horizontal Layout) --- */
+        .academic-projects-section h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .project-container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .project-description {
+            flex: 1;
+        }
+        /* --- End Academic Projects Section --- */
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+            color: #666;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Krisha Patel</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li class="projects-item">
+                <a href="projects.html">Projects</a>
+                <div class="flyout-menu">
+                    <a href="resume-website-details.html">Resume Website</a>
+                    <a href="community-project-details.html">CommUnity Project</a>
+                    <a href="culinary-app-details.html">Culinary Connoisseurs Web Application</a>
+                </div>
+            </li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-content">
+    <div class="left-column">
+        <p>
+            Motivated Computer Science student at NJIT with front-end development and UX experience. Skilled in HTML, CSS, JavaScript, responsive design, and prototype-driven UI. Seeking front-end/web development internships.
+        </p>
+
+        <h2>Education</h2>
+        <h3>
+            New Jersey Institute of Technology (NJIT)
+            <span class="location-date">Newark, NJ | Expected Graduation Date: May 2027</span>
+        </h3>
+        <h4>Bachelor of Science in Computer Science - GPA 3.2</h4>
+        <p>Relevant Coursework: Designing the User Experience, Web Development Fundamentals (HTML, CSS, JavaScript), Programming Languages (Java, Python)</p>
+
+        <h2>Leadership and Activities</h2>
+        <ul>
+            <li>Member Girl Up | Association of Computing Machinery (ACM)</li>
+        </ul>
+    </div>
+
+    <div class="right-column">
+        <h2>Professional Experience</h2>
+
+        <h3>
+            Crumbl Cookies - Baker
+            <span class="location-date">Morris Plains, NJ | February 2025 - Present</span>
+        </h3>
+        <ul>
+            <li>Baking cookies to perfection while maintaining high-quality standards.</li>
+            <li>Managed ticketing and customer service for 50+ orders per hour in a fast-paced environment.</li>
+            <li>Collaborated with team members to optimize workflows and meet daily production goals.</li>
+        </ul>
+
+        <h3>
+            Code Ninjas - Sensei (Coding Instructor)
+            <span class="location-date">Parsippany, NJ | March 2024 - August 2024</span>
+        </h3>
+        <ul>
+            <li>Taught block coding to students (ages 7-14) across 20+ project-based lessons; simplified programming concepts.</li>
+            <li>Mentored 15+ students in project-based learning and collaborated with instructors to refine teaching methods and develop students' social skills.</li>
+        </ul>
+
+        <h3>
+            Nutra-Med Packaging Inc. - Computer Science Intern
+            <span class="location-date">Whippany, NJ | May 2024 - June 2024</span>
+        </h3>
+        <ul>
+            <li>Contributed front-end updates to the company website, improving UI and navigation.</li>
+            <li>Learned and applied serialization process concepts to real-world operations.</li>
+            <li>Conducted background checks and organized HR files in compliance with internal processes.</li>
+        </ul>
+
+        <!-- Moved Technical Skills here, under Professional Experience -->
+        <h2>Technical Skills</h2>
+        <p><strong>Languages:</strong> Python, Java, C++, HTML, CSS, JavaScript (basic)</p>
+        <p><strong>Tools:</strong> Bootstrap, Git/GitHub, VS Code, Axure RP, Canva, WebStorm</p>
+        <p><strong>Concepts:</strong> Responsive Web Design, UX/UI, Wireframing, Prototyping, Object-Oriented Programming</p>
+
+    </div>
+</main>
+
+<!-- Separated Academic Projects section to span full width -->
+<section class="academic-projects-section">
+    <h2>Academic Projects</h2>
+    <div class="project-container">
+        <div class="project-description">
+            <h3>Culinary Connoisseurs Web Application - NJIT (Fall 2025)</h3>
+            <p>Developed front-end login system (HTML, CSS, JavaScript) with regex validation for secure names, phone, email, and password entry. Added password visibility toggle, dynamic form elements, and modular validate() / verify() functions for real-time error detection and authentication.</p>
+        </div>
+        <div class="project-description">
+            <h3>Portfolio Website (Bootstrap) - NJIT (Fall 2025)</h3>
+            <p>Designed a multi-page responsive portfolio using Bootstrap, including Home, About, Projects, Project Detail (2-tier navigation), Resume, and Contact pages. Implemented Bootstrap Cards for project showcases, mobile-responsive navigation, and a fully functional contact form with validation. Documented each project with a 5-6 page case study covering design, implementation, demo, and reflection.</p>
+        </div>
+    </div>
+    <div class="project-container">
+        <div class="project-description">
+            <h3>Community Connection UX Project (CommUnity) - NJIT (Summer 2025)</h3>
+            <p>Conducted competitor analysis and created personas to inform user-centered design. Produced low-fidelity wireframes and an interactive prototype focusing on navigation and usability.</p>
+        </div>
+        <div class="project-description">
+            <!-- This space is blank in the original image layout -->
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+    <span>&copy; Krisha Patel</span>
+    <span>November 25 2025</span>
+    <span><a href="#">Privacy Statement</a></span>
+    <span><a href="#">Terms of Service</a></span>
+</div>
+
+</body>
+</html>
