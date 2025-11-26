@@ -30,21 +30,30 @@
             margin-bottom: 20px;
         }
 
-        nav a {
+        /* --- Updated Nav Styles --- */
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        nav ul li {
+            position: relative; /* Needed for positioning the flyout menu */
             margin-left: 50px;
+        }
+
+        nav a {
             text-decoration: none;
             color: #333;
             font-size: 1.2em;
-            display: inline-block;
-        }
-
-        nav a:first-child {
-            margin-left: 0;
+            display: block; /* Ensures links take up full space of list item */
+            padding-bottom: 5px;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
+        /* --- End Updated Nav Styles --- */
 
         h1 {
             border-bottom: 2px solid #000;
@@ -103,17 +112,62 @@
             font-weight: normal;
             font-size: 15px;
         }
+
+        /* --- Flyout Menu Styling --- */
+        .flyout-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%; /* Position right below the "Projects" link */
+            left: 0;
+            padding: 10px 0;
+        }
+
+        .flyout-menu a {
+            color: #333;
+            padding: 8px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.9em; /* Adjusted font size for sub-items */
+            margin-left: 0; /* Remove margin for internal links */
+        }
+
+        .flyout-menu a:hover {
+            background-color: #ddd;
+            text-decoration: none;
+        }
+
+        /* Show the flyout menu on hover */
+        .projects-item:hover .flyout-menu {
+            display: block;
+        }
+        /* End Flyout Menu Styling */
     </style>
 </head>
 <body>
 
 <header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
+        <!-- Changed the structure to use UL and LI, as required by the CSS -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <!-- Added class "projects-item" to the list item -->
+            <li class="projects-item">
+                <a href="projects.html">Projects</a>
+                <!-- Flyout Menu -->
+                <div class="flyout-menu">
+                    <a href="resume-website-details.html">Resume Website</a>
+                    <a href="community-project-details.html">CommUnity Project</a>
+                    <a href="culinary-app-details.html">Culinary Connoisseurs Web Application</a>
+                </div>
+            </li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 </header>
 
@@ -193,4 +247,3 @@
 
 </body>
 </html>
-
